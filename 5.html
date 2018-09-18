@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Посчитать сумму цифр заданного числа</title>
+	<script>
+	 
+	function main(){
+		var str = document.getElementById("1").value;
+		var arr = [];
+		var sum=Number(sum);
+		var x=Number(x);
+		x=0;
+		sum=0;
+		//разбитие на символы
+		for (var i = 0; i < str.length; i++) {
+		arr.push(str.slice(i, i+1));
+		}	
+		alert("Разбитие на символы: "+arr);
+		//преобразования символов в числа и получение его суммы
+		for (var i = 0; i < arr.length; i++) {
+		x=parseInt(arr[i], 10);
+		sum+=x;
+		}	
+		alert("Сумма: "+sum);		
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Посчитать сумму цифр заданного числа:</b><br>
+		<input type="text" size="40" id="1">
+		<input type="submit" value="Стартуем) " onclick="main()">
+		
+	</form>
+</body>
+</html>

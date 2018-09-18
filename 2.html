@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Проверить простое ли число? </title>
+	<script>
+	 
+	function main(){
+		var arr=new Array(98);
+		var str=" ";
+		for (var x = 0; x < arr.length; x++) {
+			arr[x]=x+1;
+		}	
+		nextPrime:
+		for (var i = 1; i < arr.length; i++) {
+    
+        for (var j = 1; j < i; j++) {
+          if (arr[i] % arr[j] == 0) continue nextPrime;
+        }
+		str=str+" "+arr[i];
+		}
+		alert("Числа: "+str); // простое
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Простые числа:</b><br>
+		<input type="submit" value="Стартуем) " onclick="main()">
+		
+	</form>
+</body>
+</html>

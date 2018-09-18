@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Корень натурального числа</title>
+	<script>
+	 
+	function main(){
+		var n = document.getElementById("1").value;
+		n=Number(n);
+		var sum=Number(sum);
+		sum=0;
+		//разбитие на символы
+            while (n != 0)
+            {
+                sum += n % 10;
+                n /= 10;
+            }
+		//sum=Math.trunc(sum);		
+		alert("Сумма: "+sum);		
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Кореньчисла:</b><br>
+		<input type="text" size="40" id="1">
+		<input type="submit" value="Стартуем) " onclick="main()">
+		
+	</form>
+</body>
+</html>

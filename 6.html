@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Вывести число которое является зеркальным отображением </title>
+	<script>
+	 
+	function main(){
+		var str = document.getElementById("1").value;
+		var arr = [];
+		var sum=[];
+		//разбитие на символы
+		for (var i = 0; i < str.length; i++) {
+		arr.push(str.slice(i, i+1));
+		}	
+		alert("Разбитие на символы: "+arr);
+		//преобразования символов в числа и получение его обратную сторону
+		var i=arr.length;
+		while (i>0) {
+		sum=sum+arr[i-1];
+		i--;
+		}	
+		alert("Сумма: "+sum);		
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Вывести число, которое является зеркальным отображением последовательности цифр заданного числа:</b><br>
+		<input type="text" size="40" id="1">
+		<input type="submit" value="Стартуем) " onclick="main()">
+		
+	</form>
+</body>
+</html>

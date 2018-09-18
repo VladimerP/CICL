@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Вычислить факториал числа</title>
+	<script>
+	 
+	function main(){
+		var n = document.getElementById("1").value;
+		var x=Number(x);
+		n=Number(n);
+		x=n;
+		while(x!=1)
+		{
+			x=x-1;
+			n=n*x;
+		}
+		alert("Ответ: " + n);
+		
+	}
+	</script>
+</head>
+<body>
+	<form>
+		<p><b>Факториал:</b><br>
+		<input type="text" size="40" id="1">
+		<input type="submit" value="Стартуем) " onclick="main()">
+		
+	</form>
+</body>
+</html>
